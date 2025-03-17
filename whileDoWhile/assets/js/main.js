@@ -17,4 +17,4 @@ console.log('#####');
 do {
     rand = random(min, max);
     console.log(rand);
-} while (rand !== 10);// Por que o do while é executado? 
+} while (rand !== 10);
