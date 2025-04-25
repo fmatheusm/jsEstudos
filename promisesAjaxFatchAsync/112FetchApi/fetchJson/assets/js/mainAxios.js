@@ -10,11 +10,11 @@ function carregaJsonNaPagina(json) {
         td1.innerHTML = pessoa.nome;
         tr.appendChild(td1);
 
-        const td2 = document.createElement('td')
+        const td2 = document.createElement('td');
         td2.innerHTML = pessoa.idade;
         tr.appendChild(td2);
 
-        const td3 = document.createElement('td')
+        const td3 = document.createElement('td');
         td3.innerHTML = pessoa.salario;
         tr.appendChild(td3);
 
