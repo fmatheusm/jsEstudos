@@ -561,20 +561,19 @@ __webpack_require__.r(__webpack_exports__);
 
 var senhaGerada = document.querySelector('.senha-gerada');
 var qtdCaracteres = document.querySelector('.qtd-caracteres');
-var chkMaiusculas = document.querySelector('.chk-maiusculas');
-var chkMinusculas = document.querySelector('.chk-minusculas');
-var chkNumeros = document.querySelector('.chk-numeros');
-var chkSimbolos = document.querySelector('.chk-simbolos');
+var checkMaiusculas = document.querySelector('.chk-maiusculas');
+var checkMinusculas = document.querySelector('.chk-minusculas');
+var checkNumeros = document.querySelector('.chk-numeros');
+var checkSimbolos = document.querySelector('.chk-simbolos');
 var btnGerarSenha = document.querySelector('.gerar-senha');
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function () {
   btnGerarSenha.addEventListener('click', function () {
-    senhaGerada.innerHTML = gera();
+    senhaGerada.innerHTML = gerar();
   });
 });
-function gera() {
-  var senha = (0,_geradores__WEBPACK_IMPORTED_MODULE_0__["default"])(qtdCaracteres.value, chkMaiusculas.checked, chkMinusculas.checked, chkNumeros.checked, chkSimbolos.checked);
-  console.log(senha);
-  return senha || 'Nada selecionado.';
+function gerar() {
+  var senha = (0,_geradores__WEBPACK_IMPORTED_MODULE_0__["default"])(qtdCaracteres.value, checkMaiusculas.checked, checkMinusculas.checked, checkNumeros.checked, checkSimbolos.checked);
+  return senha || 'Nada selecionado';
 }
 
 /***/ }),

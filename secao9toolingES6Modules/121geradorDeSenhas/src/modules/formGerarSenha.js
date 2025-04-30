@@ -2,26 +2,26 @@ import geraSenha from './geradores';
 
 const senhaGerada = document.querySelector('.senha-gerada');
 const qtdCaracteres = document.querySelector('.qtd-caracteres');
-const chkMaiusculas = document.querySelector('.chk-maiusculas');
-const chkMinusculas = document.querySelector('.chk-minusculas');
-const chkNumeros = document.querySelector('.chk-numeros');
-const chkSimbolos = document.querySelector('.chk-simbolos');
+const checkMaiusculas = document.querySelector('.chk-maiusculas');
+const checkMinusculas = document.querySelector('.chk-minusculas');
+const checkNumeros = document.querySelector('.chk-numeros');
+const checkSimbolos = document.querySelector('.chk-simbolos');
 const btnGerarSenha = document.querySelector('.gerar-senha');
 
 export default () => {
     btnGerarSenha.addEventListener('click', () => {
-        senhaGerada.innerHTML = gera();
+        senhaGerada.innerHTML = gerar();
     });
 };
 
-function gera() {
+function gerar() {
     const senha = geraSenha(
         qtdCaracteres.value,
-        chkMaiusculas.checked,
-        chkMinusculas.checked,
-        chkNumeros.checked,
-        chkSimbolos.checked
+        checkMaiusculas.checked,
+        checkMinusculas.checked,
+        checkNumeros.checked,
+        checkSimbolos.checked
     );
-    console.log(senha);
-    return senha || 'Nada selecionado.';
+
+    return senha || 'Nada selecionado';
 }
